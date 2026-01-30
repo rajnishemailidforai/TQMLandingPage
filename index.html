@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TQM Mentor Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">TQM</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#mentors">Mentors</a>
+        <a href="#contact">FAQ</a>
+      </nav>
+
+      <a class="nav-btn" href="#contact">Contact Us ↗</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="social-proof">
+      <div class="avatars">
+        <img src="images/user1.png" alt="Student" />
+        <img src="images/user2.png" alt="Student" />
+        <img src="images/user3.png" alt="Student" />
+        <img src="images/user4.png" alt="Student" />
+      </div>
+      <span><strong>5,000+</strong> Mentored Students</span>
+    </div>
+
+    <h1>
+      Mentorship That Builds<br />
+      IIT Minds & Stronger Humans
+    </h1>
+
+    <p class="subtitle">
+      One-on-one clarity sessions with mentors who understand exams,<br />
+      pressure, and life beyond JEE.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn primary">Book Mentor Session ↗</a>
+      <a href="#about" class="btn secondary">How TQM Works ↗</a>
+    </div>
+  </section>
+
+  <section class="value-section" id="about">
+    <div class="value-left">
+      <span class="pill">Outcomes that matter</span>
+
+      <h2>
+        Improve Your Score, Efficiency<br>
+        & Thinking Ability
+      </h2>
+
+      <p>
+        At TQM, we don’t just teach formulas. We train students to think clearly,
+        solve efficiently, and perform under pressure — the skills that actually
+        move JEE scores.
+      </p>
+
+      <a href="#mentors" class="btn primary">Explore your Mentors ↗</a>
+    </div>
+
+    <div class="value-right">
+      <img src="images/mentorship.jpg" alt="TQM mentorship session">
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-box">
+      <h3>+40%</h3>
+      <p>Problem Solving Efficiency</p>
+    </div>
+    <div class="stat-box">
+      <h3>Deep</h3>
+      <p>Conceptual Clarity</p>
+    </div>
+    <div class="stat-box">
+      <h3>Smart</h3>
+      <p>Exam Strategy</p>
+    </div>
+    <div class="stat-box">
+      <h3>Long-term</h3>
+      <p>Thinking Skills</p>
+    </div>
+  </section>
+
+  <section class="mentors-section" id="mentors">
+    <div class="mentors-header">
+      <span class="pill">Our Mentors</span>
+      <h2>Learn from People Who’ve Been There</h2>
+      <p>
+        Our mentors don’t just teach concepts—they guide students through
+        pressure, confusion, and real exam situations.
+      </p>
+    </div>
+
+    <div class="mentors-grid">
+      <div class="mentor-card">
+        <img src="images/user1.png" alt="Mentor">
+        <h3>Rahul Verma</h3>
+        <span>IIT Khadakpur • Exam Strategy </span>
+        <p>Known for building first-principles thinking and exam calmness.</p>
+      </div>
+
+      <div class="mentor-card">
+        <img src="images/user2.png" alt="Mentor">
+        <h3>Ankit Sharma</h3>
+        <span>IIT Kanpur • Drop Year </span>
+        <p>Focuses on efficiency, problem selection, and time management.</p>
+      </div>
+
+      <div class="mentor-card">
+        <img src="images/user3.png" alt="Mentor">
+        <h3>Neha Gupta</h3>
+        <span>IIT Delhi • Backlog Specialist</span>
+        <p>Helps students simplify chemistry and avoid common traps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-left">
+      <span class="pill">Contact us</span>
+      <h2>
+        Discover the Best in<br>
+        Mentorship & Guidance
+      </h2>
+      <p>
+        Talk to a TQM mentor and understand how we improve scores,
+        efficiency, and thinking ability through structured guidance.
+      </p>
+      <img src="images/form.jpg" alt="Mentorship illustration" />
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+
+      <form id="tqm-form" onsubmit="submitForm(event)">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your name" required />
+
+        <label>WhatsApp</label>
+        <input type="text" name="whatsapp" placeholder="Your WhatsApp number" required />
+
+        <label>Email address</label>
+        <input type="email" name="email" placeholder="Your email address" required />
+
+        <label>About</label>
+        <textarea name="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" id="submit-btn">Send Message ↗</button>
+        <p id="form-status" style="margin-top:10px; font-size:14px; display:none;"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>TQM</h3>
+        <p>
+          The Question Machine is built on the belief that cracking JEE is important,
+          but building clarity, discipline, and thinking ability is essential.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About TQM</a>
+        <a href="#mentors">Mentors</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: team@thequestionmachine.in</p>
+        <p>WhatsApp: +91 85954 83567</p>
+        <p>Rasoolpur Nawada Sector 62 Noida Uttar Pradesh 201301</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 TQM. Built with clarity, not shortcuts.
+    </div>
+  </footer>
+
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="success-icon-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="check-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+        </svg>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thanks for reaching out. A TQM mentor will analyze your request and contact you on WhatsApp shortly.</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('tqm-form');
+      const submitBtn = document.getElementById('submit-btn');
+      
+      // 1. Prepare UI
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Sending...";
+
+      // 2. Prepare Data for Google Sheets
+      const formData = new FormData(form);
+      
+      // --- PASTE YOUR WEB APP URL HERE ---
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx6ZULpBe5Qz9vO1NWzZkDWUrTBH-ly-BJS5qXO81-TNVoeu_0BW4_VoRXdWd2NbX7O/exec'; 
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => {
+          // 3. Success: Show Modal
+          document.getElementById('success-modal').style.display = 'flex';
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Send Message ↗";
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert("Something went wrong. Please check your connection.");
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Send Message ↗";
+        });
+    }
+
+    function closeModal() {
+      document.getElementById('success-modal').style.display = 'none';
+    }
+    
+    // Close modal if clicking outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('success-modal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
